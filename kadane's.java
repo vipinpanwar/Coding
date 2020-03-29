@@ -1,8 +1,4 @@
-
-import java.io.*; 
-import java.util.*; 
-  
-class Kadane 
+  class Kadane 
 { 
     public static void main (String[] args) 
     { 
@@ -24,11 +20,6 @@ class Kadane
         
         
         }
-
-
-
-
-
 
         return max_sum_so_far;
 
