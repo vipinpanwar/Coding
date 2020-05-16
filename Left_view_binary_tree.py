@@ -22,6 +22,7 @@ def leftView(root,level,max_level):
         
   #              25         40
 
+#output : 12 10 25 , it is a level wise left view of binary tree
 
 
 root = Node(12) 
