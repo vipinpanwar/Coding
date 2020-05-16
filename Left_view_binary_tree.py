@@ -16,6 +16,11 @@ def leftView(root,level,max_level):
 
     leftView(root.left,level+1,max_level)
     leftView(root.right,level+1,max_level)
+    
+   #           12
+   #     10          20
+        
+  #              25         40
 
 
 
