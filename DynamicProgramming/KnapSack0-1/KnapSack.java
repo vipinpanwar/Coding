@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * 0-1 KnapSack In knapsack problem we have weight array, value array and Weight

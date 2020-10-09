@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 /**
  *  This is the variation of knapsack here we have single array arr, In knapsack we have single array
@@ -32,7 +32,7 @@ import java.util.Arrays;
  * // here i is n(which is arr[i]) and j is sum
  *   for i to n+1
  *      for j to sum + 1
- *          if(arr[i-1]<=sum)
+ *          if(arr[i-1]<=j)
  *              dp[i][j]=dp[i-1][j-arr[i-1]]||dp[i-1][j]
  *          else
  *              dp[i][j]=dp[i-1][j]

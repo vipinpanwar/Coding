@@ -77,18 +77,20 @@ public class TargetSumAndDifference {
     }
     public static void main(String[] args) {
         
-        int arr[]=new int[]{6 , 9};
+        int arr[]=new int[]{6 , 9 , 11 ,};
         int sum=0;
-        int diff=3;
+        int diff=4;
         for (int i = 0; i < arr.length; i++) {
             sum+=arr[i];
         }
         int s2=(sum-diff)/2;
         
        
-        //imp condition  //  diff of two off number always odd , if sum is odd and diff is odd then odd 
+        //imp condition  //  diff of two odd number always odd , if sum is odd and diff is odd then odd 
         //        odd + odd is even , second codition diff of even is always even , if sum is even
-        // and diff is even that even + even is always even the reason for below condtion.  
+        // and diff is even that even + even is always even the reason for below condtion. 
+        
+        //Sum + diff is always evem check for different conditions.
         if((sum+diff)%2!=0)
            System.out.println("cannot obtain any subset fot this difference");
            else

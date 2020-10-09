@@ -84,6 +84,6 @@ public class PerfectSquareSum {
 
     public static void main(String[] args) {
         int n = 10;
-        System.out.println(num);
+        System.out.println(n);
     }
 }

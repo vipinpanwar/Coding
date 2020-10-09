@@ -26,5 +26,23 @@ and every node has the 2 children till 2nd last level.
 
 ** last level can have vancat spaces.
 
+//sum Least number of perfect square for n
+if n=13 -> 4+9
+   13=is a prime number -> 
+   brute force
+   //brute force soln nSQRT(n)
+   for(int i=1;i<sqrt(n);i++)
+   for(i=2;i<sqrt(n);i++){
+      if(k%(i*i)==0)
+      k=n/i*i
+      else{
+         k=k-i*i;
+      }
+      ans=min(ans,k);
+      
+
+      k=INT_MAX;
+   }   
+
 
     

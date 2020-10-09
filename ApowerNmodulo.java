@@ -24,7 +24,7 @@ public class ApowerNmodulo{
             return 1;
         if(n%2==0)
         return aPowerNmodulo((a*a)%modulo,n/2,modulo); 
-        return (a*aPowerNmodulo(a*a,(n-1)/2,modulo))%modulo;
+        return (a*aPowerNmodulo((a*a)%modulo,(n-1)/2,modulo))%modulo;
     
     }
     
@@ -46,6 +46,26 @@ public class ApowerNmodulo{
 
         }  
      }
+
+     public static long iterativeVersion(long a,long n,long modulo){
+
+        long ans=1;
+
+        while(n>=1){
+            if(n%2==0){
+                a=(a*a)%modulo;
+                n=n/2;
+            }
+            else {
+                ans=(ans*a)%modulo;
+                n--;
+            }
+        }
+
+
+        return (ans)%modulo;
+
+     }
  
      public static void main(String args[]) {
        long  modulo=100;
@@ -54,6 +74,7 @@ public class ApowerNmodulo{
       System.out.println("Normal :"+ aPowerNmodulo(a,n,modulo));
       System.out.println("less Line Of Code1  :"+ aPowerNmoduloLessLineOfCode1(a,n,modulo));
       System.out.println("less Line Of Code2  :"+ aPowerNmoduloLessLineOfCode2(a,n,modulo));
+      System.out.println("Iterative approch  :"+ iterativeVersion(a,n,modulo));
 
      }
  
